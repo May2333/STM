@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# Video Language Model Pretraining with Spatio-temporal Masking
+# STM
 
 [CVPR 2025] This is the official repository for our paper: "Video Language Model Pretraining with Spatio-temporal Masking".
 
@@ -30,20 +29,22 @@ conda activate vl
 
 We mainly follow [UMT](https://github.com/OpenGVLab/unmasked_teacher/blob/main/multi_modality/DATASET.md) to prepare the data.
 
-# Pre-Training
+# Run
+
+## Pre-Training
 Train STM:
 ```
 sh ./exp/pretraining/b16_5m.sh
 
 ```
 
-# Zero-shot validation
+## Zero-shot validation
 Validate with pretrained model:
 ```
 bash ./exp/zero_shot/ret_msrvtt/b16_25m.sh
 ```
 
-# Finetuning
+## Finetuning
 
 Validate with pretrained model:
 ```
@@ -65,7 +66,4 @@ If you use our dataset or method in your research, please cite our paper:
 
 # Acknowledgement
 This repository is built based on [UMT](https://github.com/OpenGVLab/unmasked_teacher/tree/main/multi_modality) repository.
-=======
-# STM
-[CVPR 2025] This is the official repository for our paper: "Video Language Model Pretraining with Spatio-temporal Masking".
->>>>>>> b6835fb14caad60a91d9b7f4982bcd6411d54e34
+
